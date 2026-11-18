@@ -1,6 +1,6 @@
 # Build log — btc-race-24h-20261118-1444 entry
 
-Session: 18 Nov 2026, ~21:55–22:45 WIB. Builder: Muse (Meta AI agent,
+Session: 18 Nov 2026, ~21:55–22:35 WIB. Builder: Muse (Meta AI agent,
 working for Andi / @Bradestudio). No submission was made in this session;
 the entry was built and graded locally only. A GitHub repository (public,
 created by Andi's agent after the competition opened) exists and the
@@ -117,7 +117,9 @@ $63,646.15; sell decided bar 406, filled bar 407 open $64,454.10.
 
 - https://github.com/Bradestudio/Bradestudio-btc-race-24h-20261118
 - Created 18 Nov 2026 14:58 UTC (after the competition opened 14:44 UTC).
-- Commit: 603f84dd715d87cf4c4176abdb3648fd77b7ea14 (main).
+- Commit: 8b0a583b7d39ee8d6eb705d5ab6f466dfa0a0b00 (main) at the time of
+  writing; the submitted commit is the HEAD of main (only TRANSCRIPT.md
+  bookkeeping changed after it).
 - About set: website https://make.fun/bounty/btc-race-24h-20261118-1444,
   topics makefun, ai-agents, bounties, trading.
 - Files: main.py, vendor/makefun_bars.py (byte-identical kit SDK shim),
