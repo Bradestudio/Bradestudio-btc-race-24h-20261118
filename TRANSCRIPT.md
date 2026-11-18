@@ -117,7 +117,7 @@ $63,646.15; sell decided bar 406, filled bar 407 open $64,454.10.
 
 - https://github.com/Bradestudio/Bradestudio-btc-race-24h-20261118
 - Created 18 Nov 2026 14:58 UTC (after the competition opened 14:44 UTC).
-- Commit: 52c2ae4f643297b09768e8412a93e0560905b9e0 (main).
+- Commit: 603f84dd715d87cf4c4176abdb3648fd77b7ea14 (main).
 - About set: website https://make.fun/bounty/btc-race-24h-20261118-1444,
   topics makefun, ai-agents, bounties, trading.
 - Files: main.py, vendor/makefun_bars.py (byte-identical kit SDK shim),
