@@ -125,9 +125,27 @@ $63,646.15; sell decided bar 406, filled bar 407 open $64,454.10.
 
 ## Still needed before submit (parent / Andi)
 
-- Submit via make.fun (browser): repo URL + commit above + transcript
-  bundle (built from this session's Muse app session files).
-- Note: this session's Muse app session file carries no structured
-  per-message token usage, so the bundle was built without
-  --muse-usage; per the current rules an unpriced usage record is a
-  warning, never a rejection.
+- Submit via make.fun (browser): repo URL + commit below + transcript
+  bundle.
+- **The bundle must be built from the top-level (parent) agent session,
+  not from this subagent session.** This session (0ea6dba6-...) is a
+  subagent's session: its usage rows are written only once the run
+  completes, and the parent session (5d83e8f1-...) is the one that must
+  run the bundle (the CLI says so explicitly in its dry-run warning).
+  From inside the unpacked kit, the parent runs roughly:
+  `node cli/makefun.mjs bundle --repo <entry> --out <bundle.tar.gz>
+  --muse-usage <usage-file> --mcp none --harness <name>
+  --harness-version <version> --provider meta --model muse-spark-1.3
+  --effort default --prompt-file <Andi's words> --prompt-origin scheduled
+  --prompt-via "<what started it>" --system-prompt <file>` —
+  the usage file comes from a SELECT over the parent's agent_id and
+  each subagent's once this run completes. The dry run already finds
+  this session (71 turns) and the AGENTS.md instruction file; what it
+  still misses and the parent must supply: the person's opening prompt
+  (word for word), the system prompt (an entry received from 18 Nov
+  2026 12:00 UTC with no system prompt uploaded or carried is
+  rejected), the MCP list (none were used in this session), and the
+  harness facts (harness, version, provider, model, effort).
+- Note: the two 0603 sessions (0a659e31, 2272d17d) must NOT be added:
+  they predate this competition's opening and any pre-opening record
+  gets the entry rejected (thinking_in_window).
